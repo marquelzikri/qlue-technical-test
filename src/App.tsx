@@ -5,11 +5,6 @@ import useFetch from './hooks/useFetch';
 const Table = React.lazy(() => import('./components/Table'));
 const TableFooter = React.lazy(() => import('./components/TableFooter'));
 
-import useFetch from './hooks/useFetch';
-
-const Table = React.lazy(() => import('./components/Table'));
-const TableFooter = React.lazy(() => import('./components/TableFooter'));
-
 export default function App() {
   const { response, isLoading, setUrl } = useFetch({ initialUrl: "https://swapi.dev/api/people" });
 
